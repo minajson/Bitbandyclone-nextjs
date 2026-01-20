@@ -5,9 +5,9 @@ import { Instagram } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="mb-8 grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Company Info */}
           <div className="md:col-span-2">
             <Image
@@ -15,24 +15,27 @@ export default function Footer() {
               alt="Bitbandy Logo"
               width={120}
               height={40}
-              className="h-8 w-auto mb-4 brightness-0 invert"
+              className="mb-4 h-8 w-auto brightness-0 invert"
             />
-            <p className="text-sm mb-4">
+
+            <p className="mb-4 text-sm">
               Bitbandy is an event ticketing platform for memorable experiences
               in Nigeria. Easily host events, sell tickets (₦ or crypto),
               transfer/resell tickets, and manage merchandise.
             </p>
+
             <p className="text-sm">
               Support:{" "}
-              
+              <a
                 href="mailto:bitbandyevents@gmail.com"
                 className="text-blue-400 hover:text-blue-300"
               >
                 bitbandyevents@gmail.com
               </a>
             </p>
+
             <div className="mt-4">
-              
+              <a
                 href="https://www.instagram.com/bitbandy"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -46,7 +49,7 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Company</h3>
+            <h3 className="mb-4 font-semibold text-white">Company</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/about" className="hover:text-white">
@@ -54,7 +57,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-white">
+                <Link href="/howitworks" className="hover:text-white">
                   How it Works
                 </Link>
               </li>
@@ -68,8 +71,8 @@ export default function Footer() {
 
           {/* Explore & Legal */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Explore</h3>
-            <ul className="space-y-2 mb-6">
+            <h3 className="mb-4 font-semibold text-white">Explore</h3>
+            <ul className="mb-6 space-y-2">
               <li>
                 <Link href="/events" className="hover:text-white">
                   Browse Events
@@ -77,7 +80,7 @@ export default function Footer() {
               </li>
             </ul>
 
-            <h3 className="text-white font-semibold mb-4">Legal</h3>
+            <h3 className="mb-4 font-semibold text-white">Legal</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/legal/terms" className="hover:text-white">
